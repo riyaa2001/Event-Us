@@ -392,11 +392,17 @@ h2::before{
   .col{
     width: calc(50% - 2rem);
   }
+  .modal__content{
+    font-size: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 32rem){
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+  .modal__content{
+    font-size: 0.5rem;
   }
 }
