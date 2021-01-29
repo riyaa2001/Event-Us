@@ -299,6 +299,9 @@ h1{
   .demo-btns .modal__trigger {
     margin-bottom: 0.8rem;
   }
+  .h2{
+    font-size: 0.5rem;
+  }
 }
 .demo-close {
   position: absolute;
@@ -343,7 +346,7 @@ h2{
   text-transform: uppercase;
 }
 
-h2::before{
+h2::before, h4::before{
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -355,6 +358,14 @@ h2::before{
   /* border-right: 2px solid #01fe87; */
   overflow: hidden;
   animation: animate 6s linear infinite;
+}
+h4{
+  margin-left: 20vw;
+  position: relative;
+  font-size: 4vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
 }
 
 @keyframes animate {
@@ -398,6 +409,9 @@ h2::before{
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+  .h4{
+    margin-left: 10px;
   }
   .modal__content{
     font-size: 0.65rem;
