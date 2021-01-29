@@ -61,7 +61,7 @@ h1{
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
 	text-align: center;
-	min-height: 400px;
+	min-height: 450px;
 	height: auto;
 	border-radius: 10px;
 	color: #fff;
@@ -213,7 +213,7 @@ h1{
 }
 .modal__content {
   will-change: transform, opacity;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   padding: 2.4rem;
   background: #ffebee;
@@ -391,9 +391,6 @@ h2::before{
 @media screen and (max-width: 48rem){
   .col{
     width: calc(50% - 2rem);
-  }
-  .modal__content{
-    font-size: 0.5rem;
   }
 }
 
