@@ -1,573 +1,946 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
-  </head>
-  <body>
 
-    <div class="wrapper">
-  <!-- <h1>Parallax Flipping Cards</h1> -->
-  <h2 data-text="Live Events" style="margin-bottom: 1.5rem; margin-top: 7vh">Live Events</h2>
-  <h4 data-text="Day-1" style=" margin-left: 4rem; margin-bottom: 20px;">Day-1</h4>
-  <div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://marlin-prod.literatumonline.com/cms/attachment/d04ea288-0a12-48fe-9157-03bbc742f2a0/fx1.jpg)">
-						<div class="inner">
-							<p>Cringy Conference<br>IT’S CONTROVERSIAL</p>
-              				<span>10am-12pm</span>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
 
-						</div>
-					</div>
-					<!-- <div class="back" style="background: #172b4b;
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
+</head>
+
+<body>
+	
+
+
+  <div class="wrapper">
+    <!-- <h1>Parallax Flipping Cards</h1> -->
+    <h2 data-text="Live Events" style="margin-bottom: 1.5rem; margin-top: 7vh">Live Events</h2>
+    <h4 data-text="Day 1" style="margin-left: 5vw; margin-bottom: 20px;">Day 1</h4>
+    <div class="cols">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://marlin-prod.literatumonline.com/cms/attachment/d04ea288-0a12-48fe-9157-03bbc742f2a0/fx1.jpg)">
+            <div class="inner">
+              <p>Cringy Conference<br>IT’S CONTROVERSIAL</p>
+              <span>10am-12pm</span>
+
+            </div>
+          </div>
+          <!-- <div class="back" style="background: #172b4b;
 					background: -webkit-linear-gradient(45deg,  #172b4b 0%,#3c7e9c 100%);
 					background: -o-linear-gradient(45deg,  #172b4b 0%,#3c7e9c 100%);
 					background: linear-gradient(45deg,  #172b4b 0%,#3c7e9c 100%);"> -->
-					<div class="back" style="background: rgb(2,0,36);
+          <div class="back" style="background: rgb(2,0,36);
 					background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(11,11,62,1) 0%, rgba(29,98,112,1) 95%);">
-						<div class="inner">
-						  <p></p>
+            <div class="inner">
+              <p></p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://careerwise.school/app/uploads/sites/9/2020/06/1591736612.jpg)">
-						<div class="inner">
-							<p>RANGMANCH</p>
-              				<span>3pm-5:30pm</span>
-						</div>
-					</div>
-					<div class="back" style="background: rgb(2,0,36);
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://careerwise.school/app/uploads/sites/9/2020/06/1591736612.jpg)">
+            <div class="inner">
+              <p>RANGMANCH</p>
+              <span>3pm-5:30pm</span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(2,0,36);
 					background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(33,0,0,1) 0%, rgba(201,0,0,1) 100%);
 					">
-						<div class="inner">
-							<p></p>
+            <div class="inner">
+              <p></p>
               <!-- <a href="" data-modal="#modal" class="modal__trigger btn">Modal 1</a> -->
               <a href="" data-modal="#modal2" class="modal__trigger btn">Instructions</a>
               <!-- <button class="btn">Send</button> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/rich_media_quiz/topic/rmq_dating/getty_rf_twofinger.jpg?resize=692px:*)">
-						<div class="inner">
-							<p>SPEED DATING (HUM AAPKE HAI KAUN?)
-								</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/rich_media_quiz/topic/rmq_dating/getty_rf_twofinger.jpg?resize=692px:*)">
+            <div class="inner">
+              <p>SPEED DATING (HUM AAPKE HAI KAUN?)
+              </p>
               <span>12:30pm-2pm</span>
-						</div>
-					</div>
-					<div class="back" style="background: rgb(24,36,0);
+            </div>
+          </div>
+          <div class="back" style="background: rgb(24,36,0);
 					background: linear-gradient(45deg, rgba(24,36,0,1) 0%, rgba(6,62,0,1) 0%, rgba(201,60,0,1) 100%);">
-						<div class="inner">
-							<p>An open ended, where people would enter to the virtual dating setup and can choose their significant other</p>
+            <div class="inner">
+              <p>An open ended, where people would enter to the virtual dating setup and can choose their significant other</p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal3" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-	 </div>
-	 <h4 data-text="Day-2" style="margin-left: 4rem; margin-bottom: 20px; margin-top: 20px;">Day-2</h4><br>
-	 <div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/playlists/playlist_697/a96f0391-83e8-45a3-bc6a-f1c571b78239/poetry_by_women_SQ.jpg?)">
-						<div class="inner">
-							<p>SLAM POETRY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 data-text="Day 2" style="margin-left: 5vw; margin-bottom: 20px; margin-top: 20px;">Day 2</h4><br>
+    <div class="cols">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/playlists/playlist_697/a96f0391-83e8-45a3-bc6a-f1c571b78239/poetry_by_women_SQ.jpg?)">
+            <div class="inner">
+              <p>SLAM POETRY</p>
               <span>10am-12:30pm</span>
-						</div>
-					</div>
-					<div class="back" style="background: rgb(133,0,0);
+            </div>
+          </div>
+          <div class="back" style="background: rgb(133,0,0);
 					background: linear-gradient(45deg, rgba(133,0,0,1) 0%, rgba(255,165,165,1) 100%);">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <div class="inner">
+              <p></p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal4" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9984fde1-eed7-4d1f-8aab-2515ca2886fe/dx44h4-b491acfb-55ee-4029-9f17-34aa9166ab90.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTk4NGZkZTEtZWVkNy00ZDFmLThhYWItMjUxNWNhMjg4NmZlXC9keDQ0aDQtYjQ5MWFjZmItNTVlZS00MDI5LTlmMTctMzRhYTkxNjZhYjkwLnBuZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl19.jYWTGmqr3LnG021zc3YoO6-SUXuWZUy2lxdPGorvRkA)">
-						<div class="inner">
-							<p>MR& MS TAARANGANA (MMT)
-							</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front"
+            style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9984fde1-eed7-4d1f-8aab-2515ca2886fe/dx44h4-b491acfb-55ee-4029-9f17-34aa9166ab90.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTk4NGZkZTEtZWVkNy00ZDFmLThhYWItMjUxNWNhMjg4NmZlXC9keDQ0aDQtYjQ5MWFjZmItNTVlZS00MDI5LTlmMTctMzRhYTkxNjZhYjkwLnBuZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl19.jYWTGmqr3LnG021zc3YoO6-SUXuWZUy2lxdPGorvRkA)">
+            <div class="inner">
+              <p>MR& MS TAARANGANA (MMT)
+              </p>
               <span>2:30pm-5:30pm</span>
-						</div>
-					</div>
-					<div class="back" style="background: rgb(0,0,0);
+            </div>
+          </div>
+          <div class="back" style="background: rgb(0,0,0);
 					background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(154,154,154,1) 100%);">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <div class="inner">
+              <p></p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal5" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://media3.s-nbcnews.com/i/newscms/2019_40/3031861/190930-dating-apps-main-kh_54b27d6e835ec02e417cab965ae54ad5.jpg)">
-						<div class="inner">
-							<p>SPEED DATING
-							</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://media3.s-nbcnews.com/i/newscms/2019_40/3031861/190930-dating-apps-main-kh_54b27d6e835ec02e417cab965ae54ad5.jpg)">
+            <div class="inner">
+              <p>SPEED DATING
+              </p>
               <span>12pm-2:30pm</span>
-						</div>
-					</div>
-					<div class="back" style="background: rgb(78,75,0);
+            </div>
+          </div>
+          <div class="back" style="background: rgb(78,75,0);
 					background: linear-gradient(45deg, rgba(78,75,0,1) 0%, rgba(255,210,0,1) 100%);">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <div class="inner">
+              <p></p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal6" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-        <h2 data-text="Fun-Events" style="margin-bottom: 1.5rem; margin-top: 7vh; margin-left: 16vw; margin-right: 20vw">Fun-Events</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 data-text="Fun Events" style="margin-bottom: 1.5rem; margin-top: 7vh; margin-left: 16vw; margin-right: 20vw">Fun Events</h2>
 
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWQ9NVj_DH5fKtOaD36qc65igsyJrFz_F_ZQ&usqp=CAU)">
-						<div class="inner">
-							<p>PICTIONARY</p>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWQ9NVj_DH5fKtOaD36qc65igsyJrFz_F_ZQ&usqp=CAU)">
+            <div class="inner">
+              <p>PICTIONARY</p>
               <span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Pictionary is a dumb-charades inspired game in which you guess words. The visual representation of the word allotted is sketched by the player either on a whiteboard or a plane sheet.</p>
+            </div>
+          </div>
+          <div class="back" style=" background: rgb(251,255,27);
+		  background: linear-gradient(45deg, rgba(251,255,27,1) 0%, rgba(146,255,238,1) 100%);">
+            <div class="inner">
+              <p>Pictionary is a dumb-charades inspired game in which you guess words. The visual representation of the word allotted is sketched by the player either on a whiteboard or a plane sheet.</p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal7" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/too-many-questions-royalty-free-image-487063216-1545936032.jpg?crop=1.00xw:0.752xh;0,0.0649xh&resize=480:*)">
-						<div class="inner">
-							<p>TRIVIA</p>
-							<span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Trivia is a quiz inspired game in which there’s a volley of questions ranging from different genres thrown at the participants. They will be given a limited amount of time to answer the questions failing at which will result in their elimination from the next round.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/too-many-questions-royalty-free-image-487063216-1545936032.jpg?crop=1.00xw:0.752xh;0,0.0649xh&resize=480:*)">
+            <div class="inner">
+              <p>TRIVIA</p>
+              <span>11am-4pm</span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(255,92,92);
+		  background: linear-gradient(45deg, rgba(255,92,92,1) 0%, rgba(142,255,105,1) 50%, rgba(119,255,234,1) 100%);">
+            <div class="inner">
+              <p>Trivia is a quiz inspired game in which there’s a volley of questions ranging from different genres thrown at the participants. They will be given a limited amount of time to answer the questions failing at which will result in their
+                elimination from the next round.
 
-							</p>
+              </p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal8" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://img.mensxp.com/media/content/2014/Aug/canyouidentifythese25bollywoodmoviedialoguesfromthe90sh_1408631537_600x280.jpg)">
-						<div class="inner">
-							<p>GUESS THE DIALOGUE:
-							</p>
+        <div class="container">
+          <div class="front" style="background-image: url(https://img.mensxp.com/media/content/2014/Aug/canyouidentifythese25bollywoodmoviedialoguesfromthe90sh_1408631537_600x280.jpg)">
+            <div class="inner">
+              <p>GUESS THE DIALOGUE:
+              </p>
               <span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Guess the Dialogue is basically bollywood movies are often known for their iconic dialogues. From ‘kitne aadmi they ‘ to ‘Pushpa , I hate tears’, desi films have an abundance of catchy phrases . But do you know them all ? Let's check it </p>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(255,114,0);
+		  background: linear-gradient(249deg, rgba(255,114,0,1) 0%, rgba(235,255,38,1) 100%);">
+            <div class="inner">
+              <p>Guess the Dialogue is basically bollywood movies are often known for their iconic dialogues. From ‘kitne aadmi they ‘ to ‘Pushpa , I hate tears’, desi films have an abundance of catchy phrases . But do you know them all ? Let's check
+                it </p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal9" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://static.onecms.io/wp-content/uploads/sites/23/2020/04/28/virtual-murder-mystery-2000.jpg)">
-						<div class="inner">
-							<p>MURDER MYSTERY</p>
+        <div class="container">
+          <div class="front" style="background-image: url(https://static.onecms.io/wp-content/uploads/sites/23/2020/04/28/virtual-murder-mystery-2000.jpg)">
+            <div class="inner">
+              <p>MURDER MYSTERY</p>
               <span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Group event: We will accept registrations in groups of 3-4 and then give clues to solve various mysteries
-							</p>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(131,52,0);
+		  background: linear-gradient(291deg, rgba(131,52,0,1) 0%, rgba(213,111,0,1) 100%);">
+            <div class="inner">
+              <p>Group event: We will accept registrations in groups of 3-4 and then give clues to solve various mysteries
+              </p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal10" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://fsb.zobj.net/crop.php?r=c1SJqGI9Y9VkckXyeKH36FZd2MRRsbvvdZS9SmO9vl0URKLFbeBC2cgeS3X-DUB9wYTitel6Fu3sZRUdAEqLZFL3_3xA6lxIlfddPQAMN_czOUgugMRn47n6TwLsB6KTRm3gkkAgh6bG_PRT)">
-						<div class="inner">
-							<p>DARE TO UNLOCK
-							</p>
-							<span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+        <div class="container">
+          <div class="front" style="background-image: url(https://fsb.zobj.net/crop.php?r=c1SJqGI9Y9VkckXyeKH36FZd2MRRsbvvdZS9SmO9vl0URKLFbeBC2cgeS3X-DUB9wYTitel6Fu3sZRUdAEqLZFL3_3xA6lxIlfddPQAMN_czOUgugMRn47n6TwLsB6KTRm3gkkAgh6bG_PRT)">
+            <div class="inner">
+              <p>DARE TO UNLOCK
+              </p>
+              <span>11am-4pm</span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(107,43,0);
+		  background: linear-gradient(291deg, rgba(107,43,0,1) 0%, rgba(134,134,133,1) 100%);">
+            <div class="inner">
+              <p></p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal11" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="container">
-					<div class="front" style="background-image: url(https://i.ytimg.com/vi/4EoAHdwGBvU/maxresdefault.jpg)">
-						<div class="inner">
-							<p>YOLO- You Only Laugh once
-							</p>
-							<span>11am-4pm</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>You have to make the other person laugh while cracking the lamest joke possible, jokes will be provided but your jokes are welcomed too. </p>
+        <div class="container">
+          <div class="front" style="background-image: url(https://i.ytimg.com/vi/4EoAHdwGBvU/maxresdefault.jpg)">
+            <div class="inner">
+              <p>YOLO- You Only Laugh once
+              </p>
+              <span>11am-4pm</span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(214,202,0);
+		  background: linear-gradient(291deg, rgba(214,202,0,1) 0%, rgba(27,75,121,1) 50%, rgba(167,255,254,1) 100%);">
+            <div class="inner">
+              <p>You have to make the other person laugh while cracking the lamest joke possible, jokes will be provided but your jokes are welcomed too. </p>
               <!-- <button class="btn">Send</button> -->
               <a href="" data-modal="#modal12" class="modal__trigger btn">Instructions</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
- </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 data-text="Online Events" style="margin-bottom: 1.5rem; margin-top: 7vh; margin-left: 3vw; ">Online Events</h2>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://image.freepik.com/free-vector/silhouettes-group-dancing_1048-5136.jpg)">
+            <div class="inner">
+              <p>FEEL THE BEAT
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" >
+            <div class="inner">
+              <p>Group dancing competition, entries along with their videos
+              </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal13" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://www.radioandmusic.com/sites/www.radioandmusic.com/files/images/entertainment/2017/10/14/shubhastory_0.jpg)">
+            <div class="inner">
+              <p>ANHAD- Indian Solo Singing
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(214,0,73);
+		  background: linear-gradient(291deg, rgba(214,0,73,1) 0%, rgba(37,0,0,1) 100%);">
+            <div class="inner">
+              <p> </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal14" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://i.pinimg.com/736x/ec/37/c5/ec37c50787caff4aaeba6b10a771f6cb.jpg)">
+            <div class="inner">
+              <p>MELODY NEXUS- Western Solo Singing
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(214,139,0);
+		  background: linear-gradient(291deg, rgba(214,139,0,1) 0%, rgba(255,228,179,1) 100%);">
+            <div class="inner">
+              <p> </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal15" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://i.insider.com/5915e94edd0895ad168b480c?width=1100&format=jpeg&auto=webp)">
+            <div class="inner">
+              <p>EUPHONIOUS- Instrumental Solo
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(255,86,236);
+		  background: linear-gradient(45deg, rgba(255,86,236,1) 0%, rgba(255,228,179,1) 100%);">
+            <div class="inner">
+              <p> </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal16" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://ak.picdn.net/shutterstock/videos/27865858/thumb/1.jpg)">
+            <div class="inner">
+              <p>POP ART
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(255,174,86);
+		  background: linear-gradient(45deg, rgba(255,174,86,1) 0%, rgba(255,228,179,1) 100%);">
+            <div class="inner">
+              <p>Theme based painting competition, they have to share the time lapse video of the participant making the painting
+              </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal17" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://media.istockphoto.com/photos/young-woman-using-dslr-camera-picture-id610259354?k=6&m=610259354&s=612x612&w=0&h=5krUZxuZIzUYeWA73VP--aamKjLf1leKEe6cmg3zbcQ=)">
+            <div class="inner">
+              <p>TASVEER
+              </p>
+              <span></span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(86,255,169);
+background: linear-gradient(45deg, rgba(86,255,169,1) 0%, rgba(255,228,179,1) 100%);">
+            <div class="inner">
+              <p>Participants are asked to mail their photographs on the theme-Tishnagi - alone, yet together.
+              </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal18" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://sytereitz.com/wp-content/uploads/2012/05/Pail.jpg)">
+            <div class="inner">
+              <p>MISCHIEF MANAGED
+              </p>
+              <span>11am-4pm</span>
+            </div>
+          </div>
+          <div class="back" style="background: rgb(0,147,72);
+		  background: linear-gradient(45deg, rgba(0,147,72,1) 0%, rgba(122,0,203,1) 100%);">
+            <div class="inner">
+              <p>Post a video of a prank played on your family members
+              </p>
+              <!-- <button class="btn">Send</button> -->
+              <a href="" data-modal="#modal19" class="modal__trigger btn">Instructions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
- <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p> 1. Participants will be given a choice out of 3 topics to choose.</p>
-				<p> 2. Topics will be given on first come first serve basis (along with the choice to speak for or against the topic)</p>	
-				<p> 3. Time limit: 3-4 mins per participant</p>	
-				<p> 4. We ‘ll present slides of random objects on screen and they’ll have to include those objects in their argument</p>	
-				<p> 5. Criteria: hilarious and innovative arguments</p>	
+  <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p> 1. Participants will be given a choice out of 3 topics to choose.</p>
+        <p> 2. Topics will be given on first come first serve basis (along with the choice to speak for or against the topic)</p>
+        <p> 3. Time limit: 3-4 mins per participant</p>
+        <p> 4. We ‘ll present slides of random objects on screen and they’ll have to include those objects in their argument</p>
+        <p> 5. Criteria: hilarious and innovative arguments</p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
 
-			</div>
-		</div>
-	</div>
-  <div id="modal2" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p><h3><b>Round 1: </b></h3> share your monologues with us;<br> Criteria: acting skills; <br> Shortlist: 8 </p><br>
-				<p><h3><b>Live Round 1: </b></h3>  mono-acting based  event in which contestants will be required to dress in their craziest costumes as their favourite comics, anime, movie or science fiction stars enacting their fav set of the same.;<br>Criteria: Judges’ choice</p><br>
-				<p><b>Prizes: </b> 3 Goodies, goodies for 2 judges and 1 anchor</p> 
-				<p><b>Posters:</b> 3(judges, anchor, event)</p>
-				<p><b>Cash prize: </b> 2k</p>
-				<p><b>Honorarium:</b> Anchor-2K, Judges-4k</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p>An open ended, where people would enter to the virtual dating setup and can choose their significant other<br>
-				Not just guys opp girl, but you choose who you want to interact with(guy/girl)<br>
-				<br>
-				- The people would introduce themselves, if in case they’re unable to hold the conversation<br> 
-				The coordinators will ask some ice breaking questions: <br>
-				- What is your guilty pleasure <br>
-					- what kind of girl/guy you’d like to have<br> 
-					- your most embarrassing moment <br>
-					- How do you overcome challenge in life<br> 
-					<br>
-					Once we’re done asking questions, and we still feel that the conversation isn’t getting fruitful then we’ll ask the two personally if they’re willing to continue, if they yes then we’ll ask them :<br> 
-					- if they’re willing to go forward with the same person<br> 
-					- if they want to try the round with someone else<br>
-					- selected couples go to the next round on day2<br>
-				</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal2" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>
+        <h3><b>Round 1: </b></h3> share your monologues with us;<br> Criteria: acting skills; <br> Shortlist: 8 </p><br>
+        <p>
+        <h3><b>Live Round 1: </b></h3> mono-acting based event in which contestants will be required to dress in their craziest costumes as their favourite comics, anime, movie or science fiction stars enacting their fav set of the
+        same.;<br>Criteria: Judges’ choice</p><br>
+        <p><b>Prizes: </b> 3 Goodies, goodies for 2 judges and 1 anchor</p>
+        <p><b>Posters:</b> 3(judges, anchor, event)</p>
+        <p><b>Cash prize: </b> 2k</p>
+        <p><b>Honorarium:</b> Anchor-2K, Judges-4k</p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal4" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Modal 3</h1>
-				<p> <h3><b>Shortlisting Round: </b></h3><br>submit poems ;<br> Criteria: Jury’s choice;<br>
-					<b>Shortlist: </b>10 participants<br>
-					<b>Live:</b> Poems on the Theme- Aurora, Fluorescence in void Poem recitation<br>
-					<b>Rule: </b>self written <br>
-					<b>Winner :</b> 1st, 1st Runner up, 2nd runner up<br>
-					<b>Requirements : </b>3 goodies, 2 giveaways, goodies for 1 judge and 1 host<br>
-					<h3><b>Open mic: </b></h3><br>Anhad participants, stand ups and mimicry<br>
-					<b>Posters:</b> 3(judges, anchor, event)<br>
-					<b>Cash Prize: </b>2k<br>
-					<b>Honorarium: </b>Anchor-2K, Judges-4k<br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal3" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>An open ended, where people would enter to the virtual dating setup and can choose their significant other<br>
+          Not just guys opp girl, but you choose who you want to interact with(guy/girl)<br>
+          <br>
+          - The people would introduce themselves, if in case they’re unable to hold the conversation<br>
+          The coordinators will ask some ice breaking questions: <br>
+          - What is your guilty pleasure <br>
+          - what kind of girl/guy you’d like to have<br>
+          - your most embarrassing moment <br>
+          - How do you overcome challenge in life<br>
+          <br>
+          Once we’re done asking questions, and we still feel that the conversation isn’t getting fruitful then we’ll ask the two personally if they’re willing to continue, if they yes then we’ll ask them :<br>
+          - if they’re willing to go forward with the same person<br>
+          - if they want to try the round with someone else<br>
+          - selected couples go to the next round on day2<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal5" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p><b>Round 1:</b> Post picture and tag taarangana; Criteria- Maximum likes; Expected shortlist- 15 each, in total 30<br>
-					<b>Round 2:</b>Reel It (a 20 or 15 secs of doing anything fun- basically talent round);Criteria: jury’s choice/ Maxm likes; Expected shortlist- 6 each, in total 12<br>
-					<br>
-					<h3><b>Live rounds: </b></h3>
-					<br>
-					<b>Round 1:</b> Introduction Round – Introduce yourself with the help of a materialistic thing or a song<br>
-					Eg- Main khwabon ki shahzadi,  Main hoon har dil pe chhayi<br>
-					<b>Round 2:</b>  Show your Fashion skills<br>
-					Description- we will give an item to every contestant and they have to use it to showcase different styles with the help of that cloth. They have to show us at least 3 different styles<br> 
-					<b>Round 3:</b>  we will give some challenges to every participant and they have to perform that challenge<br>
-					Eg- we can give a tongue twister <br>
-					<b>Round 4:</b>  Beauty with Brain (Questioning Round)<br>
-					<b>Description –</b> We will ask some general questions from each participant. Eg-What is more important for you inner beauty or outer beauty? <br>
-					<br>
-					<b>Criteria: </b>Criteria:>spontaneity, fun , intelligence<br>
-					<br>
-					<b>Titles :</b> Mr & Ms Taarangana, Mr & Miss Proficient and Mr & Miss Magnetic<br>
-					(Magnetic - Participants who get most of the likes and comments during shortlist Round)<br>
-					<br>
-					<b>Requirements: </b>6 goodies, 2 giveaways, goodies for 2 judges and anchor<br>
-					<b>Platform:</b> Zoom<br>
-					<b>Posters:</b> 3( judges, anchor, event)<br>
-					<b>Honorarium:</b> Judges- 4k,  Anchor-2.5k<br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal4" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Modal 3</h1>
+        <p>
+        <h3><b>Shortlisting Round: </b></h3><br>submit poems ;<br> Criteria: Jury’s choice;<br>
+        <b>Shortlist: </b>10 participants<br>
+        <b>Live:</b> Poems on the Theme- Aurora, Fluorescence in void Poem recitation<br>
+        <b>Rule: </b>self written <br>
+        <b>Winner :</b> 1st, 1st Runner up, 2nd runner up<br>
+        <b>Requirements : </b>3 goodies, 2 giveaways, goodies for 1 judge and 1 host<br>
+        <h3><b>Open mic: </b></h3><br>Anhad participants, stand ups and mimicry<br>
+        <b>Posters:</b> 3(judges, anchor, event)<br>
+        <b>Cash Prize: </b>2k<br>
+        <b>Honorarium: </b>Anchor-2K, Judges-4k<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal6" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Modal 3</h1>
-				<p>Round1: The AWWW-some Challenge<br>
-					Participants: Direct entry of selected couples through registration and Final couples from Round 1<br>
-					Both the people in the couple will get 1-2 min each and they would have to do or say things so as to get the other person to say “aww” as many times as they can.<br>
-					We’ll keep a score of the max and genuine “aww”s uttered <br>
-					<br>
-					Round2: Jab We Met<br>
-					Selected couples from Round 2<br>
-					<br>
-					An opening line about a hypothetical scenario will be given to each couple <br>
-					They’ll have to weave their hypothetical story out of it turn by turn and make it as hilarious and engaging as they can.<br>
-					<br>
-					Goodies(5): for the best 2 couples, Anchor<br>
-					Honorarium: 2k(Anchor)<br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal5" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p><b>Round 1:</b> Post picture and tag taarangana; Criteria- Maximum likes; Expected shortlist- 15 each, in total 30<br>
+          <b>Round 2:</b>Reel It (a 20 or 15 secs of doing anything fun- basically talent round);Criteria: jury’s choice/ Maxm likes; Expected shortlist- 6 each, in total 12<br>
+          <br>
+        <h3><b>Live rounds: </b></h3>
+        <br>
+        <b>Round 1:</b> Introduction Round – Introduce yourself with the help of a materialistic thing or a song<br>
+        Eg- Main khwabon ki shahzadi, Main hoon har dil pe chhayi<br>
+        <b>Round 2:</b> Show your Fashion skills<br>
+        Description- we will give an item to every contestant and they have to use it to showcase different styles with the help of that cloth. They have to show us at least 3 different styles<br>
+        <b>Round 3:</b> we will give some challenges to every participant and they have to perform that challenge<br>
+        Eg- we can give a tongue twister <br>
+        <b>Round 4:</b> Beauty with Brain (Questioning Round)<br>
+        <b>Description –</b> We will ask some general questions from each participant. Eg-What is more important for you inner beauty or outer beauty? <br>
+        <br>
+        <b>Criteria: </b>Criteria:>spontaneity, fun , intelligence<br>
+        <br>
+        <b>Titles :</b> Mr & Ms Taarangana, Mr & Miss Proficient and Mr & Miss Magnetic<br>
+        (Magnetic - Participants who get most of the likes and comments during shortlist Round)<br>
+        <br>
+        <b>Requirements: </b>6 goodies, 2 giveaways, goodies for 2 judges and anchor<br>
+        <b>Platform:</b> Zoom<br>
+        <b>Posters:</b> 3( judges, anchor, event)<br>
+        <b>Honorarium:</b> Judges- 4k, Anchor-2.5k<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal7" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions </h1>
-				<p>Team Registration: 3-5 members ; <br>Platform: Zoom<br>
-					<h3><b>Steps: </b></h3><br>
-					1. The teams will register themselves for the event and even mention the name of their team leader.<br>
-					2. 10 teams will join at once and they will be given team numbers according to the order of joining<br>
-					3. There will be four major categories Bollywood /Friends /Marvel /Random<br>
-					Out of these four categories the teams will have to choose one category for the first round.<br>
-					<b>ROUND-1</b><br>
-					4. The team leader will be privately messaged the 5 words and he/she will be given 3 minutes to make his/her team guess the word by sketching it on a white board or a sheet.<br>
-					5. The team that guesses the maximum words moves to the next round.<br>
-					<b>ROUND-2</b><br>
-					6. The selected teams choose a theme which is different from the theme they chose previously.<br>
-					7. The team leader is privately messaged 7 words and given 3 minutes.<br>
-					8. The team that guesses the maximum words moves to the next round<br>
-					<b>ROUND-3</b><br>
-					9. Again a theme is chosen by the selected teams<br> 
-					10. In this round 6 words have to be guessed in 2 minutes.<br>
-					The rounds continue until one of the teams win.<br>
-					<br>
-					<h3><b>TEAM MEMBERS NEEDED</b></h3><br>
-					The game will be played in slots of 10 teams each<br>
-					For every slot we will need 2 people only: <br>
-					1. One person for keeping track of the time<br>
-					2. Second person for giving the words to the teams. <br>
-					<b>Goodies:</b> 10 for the 2 best performing teams<br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal6" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Modal 3</h1>
+        <p>Round1: The AWWW-some Challenge<br>
+          Participants: Direct entry of selected couples through registration and Final couples from Round 1<br>
+          Both the people in the couple will get 1-2 min each and they would have to do or say things so as to get the other person to say “aww” as many times as they can.<br>
+          We’ll keep a score of the max and genuine “aww”s uttered <br>
+          <br>
+          Round2: Jab We Met<br>
+          Selected couples from Round 2<br>
+          <br>
+          An opening line about a hypothetical scenario will be given to each couple <br>
+          They’ll have to weave their hypothetical story out of it turn by turn and make it as hilarious and engaging as they can.<br>
+          <br>
+          Goodies(5): for the best 2 couples, Anchor<br>
+          Honorarium: 2k(Anchor)<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal8" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content" style="font-size: 14px;">
-				<h1>Instructions</h1>
-				<p>1. The teams will register themselves for the event along with giving their team names.<br>
-					2. A suitable number of teams will join at once according to the number of registrations. Each participant of a team will have to rename themselves according to the team numbers given beforehand, so that members of the same team can appear together on the screen.<br> 
-					3. After joining the team members will introduce themselves and just say something about how they became friends and how they spent their time in quarantine for 1-2 min.<br>
-					4.There will be 3 rounds with questions belonging from several different categories with rounds 1 and 2 serving as elimination rounds for the final 3rd round.<br>
-					<h3><b>ROUND-1</b></h3>
-					<b>FASTEST FINGER FIRST- </b>The question will be shown on the screen and 15 seconds will be given for 1 person from each team to privately message the answer.<br>
-					The teams will be given points according to how quickly they were able to answer. <br>
-					5 such questions will be asked, in the end the top teams after tallying of the total points will qualify to the next round.<br>
-					The question asked will have 4 options, and the participants will have to arrange those options in the correct order.<br>
-					For reference the questions will be like these but easier-<br>
-					<a href = "https://www.quizwine.com/blog/kaun-banega-crorepati-season-season-8-fastest-finger-first-questions/2">https://www.quizwine.com/blog/kaun-banega-crorepati-season-season-8-fastest-finger-first-questions/2</a><br>
-					<h3><b>ROUND-2</b></h3>
-					THE SWAP ROUND- The selected teams will now answer questions pertaining to a particular category or theme.<br>
-					But the category from which a particular team has to answer questions from will be chosen by the next team.
-					This round will begin with the team scoring the most points in the last round and so on.<br>
-					Once a category is chosen, 5 questions pertaining to it will be asked. The following Categories will be there- <br>
-					- TV SHOWS (Friends/TVD/Brooklyn99 etc.)<br>
-					- ‘Who Am I’ – Clues in the form of statements/audio clips/pictures will be given in order to guess a famous personality or Common Object.<br>
-					- Complete the Song Lyrics – first 10 sec are played the rest has to be guessed.<br>
-					- Riddles<br>
-					- Guess the recipe – from a combination of key ingredients, the recipe has to be guessed.<br>
-					- Current Affairs<br>
-					The scoring in this round will be according to the number of options the participant chooses to be given-<br>
-					For 4 options – 5 points<br>
-					For 3 options – 10 points<br>
-					For 2 options – 15 points<br>
-					If the team fails to answer the question will be passed on for a bonus 10 points.<br>
-					Few top teams will proceed to the next round.<br>
-					<h3><b>ROUND-3</b></h3>
-					1.Rapid Fire- The participants will be given 1 min to score as many possible points as possible in each of the following subcategories. <br>
-					2. Do as many as possible in 1 min:<br>
-					Guess the symbols and logos<br>
-					Give the hindi/English word for <br>
-					Find the hidden objects<br>
-					3. The team with the highest cumulative total points wins!<br>
-					<br>
-					<b>Goodies: </b> 10 for the 2 best performing teams   <br>             
-				</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal7" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions </h1>
+        <p>Team Registration: 3-5 members ; <br>Platform: Zoom<br>
+        <h3><b>Steps: </b></h3><br>
+        1. The teams will register themselves for the event and even mention the name of their team leader.<br>
+        2. 10 teams will join at once and they will be given team numbers according to the order of joining<br>
+        3. There will be four major categories Bollywood /Friends /Marvel /Random<br>
+        Out of these four categories the teams will have to choose one category for the first round.<br>
+        <b>ROUND-1</b><br>
+        4. The team leader will be privately messaged the 5 words and he/she will be given 3 minutes to make his/her team guess the word by sketching it on a white board or a sheet.<br>
+        5. The team that guesses the maximum words moves to the next round.<br>
+        <b>ROUND-2</b><br>
+        6. The selected teams choose a theme which is different from the theme they chose previously.<br>
+        7. The team leader is privately messaged 7 words and given 3 minutes.<br>
+        8. The team that guesses the maximum words moves to the next round<br>
+        <b>ROUND-3</b><br>
+        9. Again a theme is chosen by the selected teams<br>
+        10. In this round 6 words have to be guessed in 2 minutes.<br>
+        The rounds continue until one of the teams win.<br>
+        <br>
+        <h3><b>TEAM MEMBERS NEEDED</b></h3><br>
+        The game will be played in slots of 10 teams each<br>
+        For every slot we will need 2 people only: <br>
+        1. One person for keeping track of the time<br>
+        2. Second person for giving the words to the teams. <br>
+        <b>Goodies:</b> 10 for the 2 best performing teams<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal9" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p><b>Team Registration:</b> 2-3 members<br>
-					<br>
-					<b>Platform:</b> Google meet<br>
-					<br>
-					<b>Number of rounds :</b> 3<br>
-					<br>
-					<h3><b>Steps:</b></h3><br>
-					1. The teams will register themselves for the event and even mention the name of their team leader.<br>
-					2. The max. the team who answers within a time limit will move to the next round .<br>
-					<b>Round 1:</b> Pictorial form of dialogues.<br>
-									 (Pictures or emoji will be given as clues )<br>
-									 Time limit  : 15 sec <br>
-					<b>Round 2:</b> Audio of dialogues omitted with words.<br>
-									 Time limit: 20 sec <br>
-					<b>Round 3:</b>  Translate the given dialogues in another language.<br>
-									   ( like if dialogue is in Hindi translate it in English or vise versa)<br>
-									   Time limit: 20 sec <br>
-					<b>Goodies: </b>10 for the 2 best performing teams<br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal8" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content" style="font-size: 14px;">
+        <h1>Instructions</h1>
+        <p>1. The teams will register themselves for the event along with giving their team names.<br>
+          2. A suitable number of teams will join at once according to the number of registrations. Each participant of a team will have to rename themselves according to the team numbers given beforehand, so that members of the same team can appear
+          together on the screen.<br>
+          3. After joining the team members will introduce themselves and just say something about how they became friends and how they spent their time in quarantine for 1-2 min.<br>
+          4.There will be 3 rounds with questions belonging from several different categories with rounds 1 and 2 serving as elimination rounds for the final 3rd round.<br>
+        <h3><b>ROUND-1</b></h3>
+        <b>FASTEST FINGER FIRST- </b>The question will be shown on the screen and 15 seconds will be given for 1 person from each team to privately message the answer.<br>
+        The teams will be given points according to how quickly they were able to answer. <br>
+        5 such questions will be asked, in the end the top teams after tallying of the total points will qualify to the next round.<br>
+        The question asked will have 4 options, and the participants will have to arrange those options in the correct order.<br>
+        For reference the questions will be like these but easier-<br>
+        <a href="https://www.quizwine.com/blog/kaun-banega-crorepati-season-season-8-fastest-finger-first-questions/2">https://www.quizwine.com/blog/kaun-banega-crorepati-season-season-8-fastest-finger-first-questions/2</a><br>
+        <h3><b>ROUND-2</b></h3>
+        THE SWAP ROUND- The selected teams will now answer questions pertaining to a particular category or theme.<br>
+        But the category from which a particular team has to answer questions from will be chosen by the next team.
+        This round will begin with the team scoring the most points in the last round and so on.<br>
+        Once a category is chosen, 5 questions pertaining to it will be asked. The following Categories will be there- <br>
+        - TV SHOWS (Friends/TVD/Brooklyn99 etc.)<br>
+        - ‘Who Am I’ – Clues in the form of statements/audio clips/pictures will be given in order to guess a famous personality or Common Object.<br>
+        - Complete the Song Lyrics – first 10 sec are played the rest has to be guessed.<br>
+        - Riddles<br>
+        - Guess the recipe – from a combination of key ingredients, the recipe has to be guessed.<br>
+        - Current Affairs<br>
+        The scoring in this round will be according to the number of options the participant chooses to be given-<br>
+        For 4 options – 5 points<br>
+        For 3 options – 10 points<br>
+        For 2 options – 15 points<br>
+        If the team fails to answer the question will be passed on for a bonus 10 points.<br>
+        Few top teams will proceed to the next round.<br>
+        <h3><b>ROUND-3</b></h3>
+        1.Rapid Fire- The participants will be given 1 min to score as many possible points as possible in each of the following subcategories. <br>
+        2. Do as many as possible in 1 min:<br>
+        Guess the symbols and logos<br>
+        Give the hindi/English word for <br>
+        Find the hidden objects<br>
+        3. The team with the highest cumulative total points wins!<br>
+        <br>
+        <b>Goodies: </b> 10 for the 2 best performing teams <br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal10" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p>Goodies: 10 for the 2 best performing teams<br>
-					<br>
-					Poster-1
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal9" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p><b>Team Registration:</b> 2-3 members<br>
+          <br>
+          <b>Platform:</b> Google meet<br>
+          <br>
+          <b>Number of rounds :</b> 3<br>
+          <br>
+        <h3><b>Steps:</b></h3><br>
+        1. The teams will register themselves for the event and even mention the name of their team leader.<br>
+        2. The max. the team who answers within a time limit will move to the next round .<br>
+        <b>Round 1:</b> Pictorial form of dialogues.<br>
+        (Pictures or emoji will be given as clues )<br>
+        Time limit : 15 sec <br>
+        <b>Round 2:</b> Audio of dialogues omitted with words.<br>
+        Time limit: 20 sec <br>
+        <b>Round 3:</b> Translate the given dialogues in another language.<br>
+        ( like if dialogue is in Hindi translate it in English or vise versa)<br>
+        Time limit: 20 sec <br>
+        <b>Goodies: </b>10 for the 2 best performing teams<br>
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal11" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi.</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal10" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>Goodies: 10 for the 2 best performing teams<br>
+          <br>
+          Poster-1
+        </p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
-  <div id="modal12" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<h1>Instructions</h1>
-				<p>It’ll be a grp event but can also be conducted with individuals.<br>
-					If the person laughs, his/her team member will replace him, and the team with the maximum points wins.<br>
-					<br>
-					Rules: If you laugh the opponent team gets the point<br>
-					Platform: Zoom<br>
-					Goodies:4 <br>
-					</p>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal11" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi.</p>
 
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal12" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>It’ll be a grp event but can also be conducted with individuals.<br>
+          If the person laughs, his/her team member will replace him, and the team with the maximum points wins.<br>
+          <br>
+          Rules: If you laugh the opponent team gets the point<br>
+          Platform: Zoom<br>
+          Goodies:4 <br>
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal13" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>Group dancing competition, entries along with their videos
+          <br><br>
+          Winner & Runner up teams <br>
+          <b>Goodies:</b> 75+3(judges) <br>
+          <b>Cash Prize:</b> 10k(winner) and 5k(1st runner up)
+
+
+
+        </p>
+
+
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal14" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p> <b>Rules:</b><br>
+          1) Theme for the competition is ‘Bollywood Retro’.<br>
+          2) Mashup of songs are allowed.<br>
+          3) No vulgar lyrics will be allowed. <br>
+          4) Choice of Language – Hindi only. <br>
+          5) Usage of autotune/any kind of voice editing is prohibited.<br>
+          6) Judge’s decision will be final. <br>
+          7) The participants must record a 1-2 minutes video of them singing and submit the link (Google drive/youtube) with access open to all. <br>
+          8) The video should be a one shot video without any cuts. The participant should be visible in the camera frame throughout the video. <br>
+          9) Video editing is not allowed. <br>
+          10) The video should be submitted before the deadline. No excuses will be entertained afterwards. <br>
+          11) Old performance videos are not allowed.<br> <br>
+          <b>Goodies(3+3):</b> Winner , 1st Runner up and 2nd Runner up, judges <br>
+          <b>Cash Prize:</b> 2k(winner),
+          1k(1st runner up)
+
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal15" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p><b>Rules:</b> <br>
+          1) Theme for the competition is ‘Pop’. <br>
+          2) Mashup of songs are allowed. <br>
+          3) No vulgar lyrics will be allowed. <br>
+          4) Choice of Language – English only. <br>
+          5) Backtracking of sound is allowed. <br>
+          6) Usage of autotune/any kind of voice editing is prohibited. <br>
+          7) Usage of only one instrument is allowed but you will be judged on the basis of your singing only. <br>
+          8) Judge’s decision will be final.<br>
+          9) The participants must record a 1-2 minutes video of them singing and submit the link (Google drive/youtube) with access open to all. <br>
+          10) Video editing is not allowed. <br>
+          11) Visual setting is not important. <br>
+          12) The video should be submitted before the deadline. No excuses will be entertained afterwards. <br>
+          13) Old performance videos are not allowed. <br>
+          <b>Goodies(3+3):</b> Winner , 1st Runner up and 2nd Runner up, judges
+          <b>Cash Prize: </b>2k(winner) and
+          1k(1st runner up)
+
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal16" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p><b>Rules:</b> <br>
+          1) Solo and group both entries are allowed <br>
+          2) All instruments are allowed for this competition.<br>
+          3) Music from any genre is allowed. <br>
+          4) Use of manipulation of audio/video will result in disqualification. <br>
+          5) Entries should be purely instrumental i.e, they should strictly have no vocals.Otherwise, the entry will be rejected.<br>
+          6) Brownie points will be given for originals. <br>
+          7) Each participant/group has to submit a max 3 min video as a google drive/youtube link with access open to all. <br>
+          8) The video should be a one shot video without any cuts. The participant should be visible in the camera frame throughout the video. <br>
+          9) Old performance videos are not allowed. <br>
+          10) However,for other instruments you may use a metronome. <br>
+          11) In case of any conflict, the judge's discretion will be taken as the final word. <br>
+          12) We reserve the right to disqualify any participant at any point in time, in case of misbehavior or subordination of the esteemed judge(s). <br><br>
+          <b>Goodies(3+3):</b> Winner , 1st Runner up and 2nd Runner up, judges <br>
+          <b>Cash Prize:</b> 2k(winner) and
+          1k(1st runner up)
+
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal17" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>Theme based painting competition, they have to share the time lapse video of the participant making the painting. <br>
+
+          <b>Theme -</b> Tishnagi - alone, yet together <br>
+          Winners, 1st Runner up and 2nd Runner up <br>
+          <b>Goodies:</b> 4 <br>
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal18" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p><b>RULES:</b> <br>
+          1) Each participant has to submit only one photograph on the given theme. <br>
+          2)Each participant must follow Taarangana and Prekshya on Instagram. <br>
+          3) image must be in .jpeg format. 4)Captions are optional. <br>
+          4)Personal and informal portraits will not be accepted. <br>
+          5)The subject of the mail should be the theme.The body of the mail should consist of Name, College, Course & Year, and contact number. <br>
+          6)Rename the photograph as "fullname_theme" (For example- Lavanyagupta_thenandnow.) <br>
+          7)​Mobile photography ​is allowed.Only basic editing like ,brightness, contrast etc is allowed.​ ​Photographs must be submitted without watermarks. <br>
+          8)Plagiarism shall lead to immediate disqualification. <br>
+          9)Send in your entries at the email id ​emtaarangana@gmail.com​ by the proposed Deadline. <br>
+          10)The winners will be provided with e-certificates and goodies. <br> <br>
+          Winner,1st Runner up and 2nd Runner up <br>
+
+          <b>Goodies-</b> 3 <br>
+
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="modal19" class="modal modal__bg  modal--align-top" role="dialog" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h1>Instructions</h1>
+        <p>Post a video of a prank played on your family members. <br>
+
+          <b>Shortlist:</b> 2-Maximum likes ; 1- Jury’s choice <br>
+          <b>Goodies: </b>6 <br>
+
+        </p>
+
+        <!-- modal close button -->
+        <a href="" class="modal__close demo-close">
+          <svg class="" viewBox="0 0 24 24">
+            <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+            <path d="M0 0h24v24h-24z" fill="none" /></svg>
+        </a>
+      </div>
+    </div>
+  </div>
   <script src="script.js" charset="utf-8"></script>
 
-  </body>
+</body>
+
 </html>
