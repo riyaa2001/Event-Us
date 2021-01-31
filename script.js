@@ -68,7 +68,7 @@ var Modal = (function() {
 
     // these values are used to move the button to the center of the window
     transX = Math.round(xc - trigProps.left - trigProps.width / 2);
-    transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+    transY = Math.round(yc - trigProps.top -trigProps.height / 2);
 
 		// if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
     if (m.classList.contains('modal--align-top')) {
@@ -80,8 +80,13 @@ var Modal = (function() {
 		trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
 		trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
 		// expand temporary div to the same size as the modal
+    // div.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
+		// div.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
+
 		div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';
 		div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';
+
+
 
 
 		window.setTimeout(function() {
@@ -189,3 +194,4 @@ var Modal = (function() {
 }());
 
 Modal.init();
+
