@@ -46,6 +46,26 @@ h1{
 	-webkit-perspective: 1000px;
 	        perspective: 1000px;
 }
+.button_reg{
+  align-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.register{
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+  width: 8rem;
+  height: 2.5rem;
+  background-color: blanchedalmond;
+  transition: 0.3s;
+  font-size: 1.10rem;
+  font-family: 'DM Serif Display', serif;
+}
+.register:hover {
+  background-color: #00b306dc;
+  color: white;
+}
 
 .front,
 .back{
@@ -430,6 +450,12 @@ h4{
   .modal__content{
     font-size: 0.65rem;
   }
+  .register{
+    width: 4.5rem;
+    height: 1.85rem;
+    font-size: 0.75rem;
+    border-radius: 10px;
+  }
 }
 
 @media query and (max-width: 630px){
@@ -437,5 +463,6 @@ h4{
     margin-left: 0;
     font-size: 10vw;
   }
+  
 
 }
